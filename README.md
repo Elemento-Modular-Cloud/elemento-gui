@@ -18,6 +18,9 @@ To get started with ElectrOS, follow these simple steps:
 2. **Install**: Open the downloaded file and follow the installation instructions.
 3. **Launch ElectrOS**: Once installed, launch ElectrOS and log in with your Elemento credentials.
 
+## CI/CD
+![Develop Branch](https://github.com/filippo-ferrando/elemento-gui/actions/workflows/build-beta.yml/badge.svg?branch=develop)
+
 ## Building from Source
 
 If you prefer to build ElectrOS from source, ensure you have Node.js and Yarn installed, then follow these steps:

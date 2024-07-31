@@ -2,6 +2,7 @@ module.exports = {
   packagerConfig: {
     name: 'ElectrOS',
     icon: './public/icon',
+    prune: true,
     osxSign: {
       identity: 'Developer ID Application: Elemento SRL (9WTDB7G2C7)', // the name of your Developer ID certificate
       optionsForFile: (filePath) => {
@@ -15,8 +16,8 @@ module.exports = {
     },
     osxNotarize: {
       tool: 'notarytool',
-      appleId: 'framesystem@icloud.com',
-      appleIdPassword: 'mumw-joxm-gdde-lhdq', // Apple App-specific password
+      appleId: 'fferrando@elemento.cloud',
+      appleIdPassword: 'iswt-hmsx-xinw-ppef', // Apple App-specific password
       teamId: '9WTDB7G2C7'
     },
     ignore: [
@@ -38,7 +39,7 @@ module.exports = {
       }
     },
     {
-      name: '@electron-forge/maker-zip',
+      name: '@electron-forge/maker-dmg',
       platforms: ['darwin']
     },
     {
